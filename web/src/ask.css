@@ -1,0 +1,68 @@
+.ask-screen { padding: calc(8px + env(safe-area-inset-top)) 0 90px; }
+.ask { display: flex; flex-direction: column; gap: 10px; padding: 0 12px; }
+.ask-row { display: flex; gap: 8px; align-items: center; }
+.ask-project, .ask-q {
+  min-width: 0;
+  border: 1px solid #1c2737;
+  border-radius: 10px;
+  background: #0d1520;
+  color: #dbe7f3;
+  font: inherit;
+  font-size: 16px;
+}
+.ask-project { flex: 1; height: 44px; padding: 0 10px; }
+.ask-ready {
+  flex: 0 0 auto;
+  max-width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 6px 10px;
+  border: 1px solid #1c2737;
+  border-radius: 999px;
+  color: #68788c;
+  font: 700 12px/1 "SFMono-Regular", Menlo, monospace;
+}
+.ask-ready.on { color: #62e6a7; border-color: #2c7259; }
+.ask-ready.off { color: #ff8a8a; border-color: #6b2f37; }
+.ask-sizes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.ask-sizes button {
+  height: 38px;
+  border: 1px solid #1c2737;
+  border-radius: 10px;
+  background: #0d1520;
+  color: #dbe7f3;
+  font-size: 14px;
+}
+.ask-sizes button.selected { border-color: #62e6a7; color: #62e6a7; }
+.ask-reach { margin: 0 2px; color: #8a9bb0; font-size: 13px; line-height: 1.35; }
+.ask-reach.err { color: #ff8a8a; }
+.ask-q { width: 100%; padding: 12px; line-height: 1.4; resize: vertical; box-sizing: border-box; }
+.ask-go {
+  height: 48px;
+  border: 0;
+  border-radius: 12px;
+  background: #62e6a7;
+  color: #062014;
+  font-size: 16px;
+  font-weight: 700;
+}
+.ask-go:disabled { background: #1c2b26; color: #5f8a76; }
+.ask-answers { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }
+.ask-answer { border: 1px solid #1c2737; border-radius: 12px; background: #0d1520; padding: 12px; }
+.ask-answer.err { border-color: #6b2f37; }
+.ask-answer-q { color: #62e6a7; font-weight: 700; font-size: 15px; margin-bottom: 8px; }
+.ask-answer-a { color: #e3ecf6; font-size: 15px; line-height: 1.5; overflow-wrap: anywhere; }
+.ask-answer.err .ask-answer-a { white-space: pre-wrap; }
+.ask-answer-quotes { margin-top: 8px; color: #8a9bb0; font-size: 12px; white-space: pre-wrap; }
+.ask-answer-foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 10px; color: #68788c; font-size: 12px; }
+.ask-answer-foot button, .ask-clear {
+  flex: 0 0 auto;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid #1c2737;
+  border-radius: 8px;
+  background: transparent;
+  color: #dbe7f3;
+}
+.ask-clear { align-self: center; margin-top: 4px; color: #8a9bb0; }

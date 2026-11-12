@@ -1,0 +1,21 @@
+{
+  "name": "opsdeck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm --prefix web run build",
+    "test": "PYTHONDONTWRITEBYTECODE=1 server/.venv/bin/python -m unittest discover -s tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@capacitor/core": "^8.4.2",
+    "@capacitor/ios": "^8.4.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.4.2"
+  }
+}

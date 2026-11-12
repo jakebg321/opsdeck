@@ -1,0 +1,17 @@
+{
+  "appId": "dev.example.opsdeck",
+  "appName": "Opsdeck",
+  "webDir": "web/dist",
+  "server": {
+    "url": "https://opsdeck.example.com:8444",
+    "cleartext": true,
+    "allowNavigation": [
+      "opsdeck.example.com",
+      "192.0.2.10"
+    ]
+  },
+  "ios": {
+    "contentInset": "never",
+    "backgroundColor": "#0a0f17"
+  }
+}

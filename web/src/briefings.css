@@ -1,0 +1,66 @@
+.br-section {
+  display: grid;
+  gap: 8px;
+  margin: 4px 0 14px;
+}
+
+.br-list {
+  display: grid;
+  gap: 8px;
+}
+
+.br-item {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+}
+
+.br-head {
+  display: grid;
+  gap: 3px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #e1ebf5;
+  font: inherit;
+  text-align: left;
+}
+
+.br-head b {
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.br-head span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.br-item audio {
+  width: 100%;
+  height: 40px;
+}
+
+.br-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #c9d6e3;
+  white-space: pre-wrap;
+}
+
+.br-more {
+  justify-self: start;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid #2c3b50;
+  border-radius: 999px;
+  background: #0e1621;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+}

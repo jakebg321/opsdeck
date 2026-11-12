@@ -1,0 +1,90 @@
+{
+  "sample": true,
+  "ts": 0,
+  "gpus": [
+    {
+      "label": "GPU 0 \u00b7 local",
+      "name": "Example GPU",
+      "used_mb": 12288,
+      "total_mb": 24576,
+      "util_pct": 42,
+      "temp_c": 51,
+      "history": [
+        29,
+        31,
+        39,
+        38,
+        44,
+        42
+      ],
+      "procs": [
+        {
+          "pid": 2468,
+          "name": "model-server",
+          "mem_mb": 6144
+        },
+        {
+          "pid": 2508,
+          "name": "worker.py",
+          "mem_mb": 512
+        }
+      ]
+    },
+    {
+      "label": "GPU 1 \u00b7 lab",
+      "name": "Example remote GPU",
+      "used_mb": 4096,
+      "total_mb": 16384,
+      "util_pct": 12,
+      "temp_c": 44,
+      "history": [
+        18,
+        23,
+        25,
+        24,
+        25
+      ],
+      "procs": [
+        {
+          "pid": 3344,
+          "name": "remote-model",
+          "mem_mb": 4096
+        }
+      ]
+    }
+  ],
+  "hosts": [
+    {
+      "label": "local",
+      "state": "online",
+      "detail": "server host"
+    },
+    {
+      "label": "lab",
+      "state": "online",
+      "detail": "SSH available"
+    }
+  ],
+  "agents": [
+    {
+      "tool": "CODEX",
+      "project": "example",
+      "state": "idle",
+      "age_seconds": 360,
+      "current": {
+        "kind": "TOOL",
+        "value": "read_file"
+      },
+      "last_text": "Reviewed the latest change.",
+      "host": "local",
+      "cwd": "/srv/projects/example"
+    }
+  ],
+  "ollama": [
+    {
+      "name": "example-model:8b",
+      "size_gb": 5.2,
+      "until": "loaded"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+server/.venv/
+web/node_modules/
+web/dist/
+*.log
+.DS_Store
+ledger/
+
+# Native wrapper build output and local signing/configuration
+node_modules/
+ios/App/build/
+ios/App/DerivedData/
+ios/App/App/public/*
+!ios/App/App/public/.gitkeep
+ios/*.local.xcconfig
